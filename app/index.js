@@ -1,8 +1,12 @@
-const express = require('express')
-const app = express()
-const HOST = '0.0.0.0'
-const PORT = 8080
-app.get('/', (req, res) => res.json({message: 'This was deployed using a docker container!'}))
+const express = require('express');
+const PORT = 3000;
+const HOST = '0.0.0.0';
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('This app has been deployed with docker!');
+});
 
 app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}!`);
+console.log(`Running on http://${HOST}:${PORT}`);

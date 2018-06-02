@@ -1,15 +1,13 @@
 {
-  "name": "deploy-with-docker-example",
+  "name": "docker_web_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js on Docker",
+  "author": "Kim Schlesinger",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/index.js"
+    "start": "node app/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.1"
   }
 }
